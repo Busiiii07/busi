@@ -672,92 +672,31 @@
 
 
 <!-- Testimonial Start -->
-<style>
-        /* Estilos básicos */
-        .testimonial-container {
-            width: 50%;
-            margin: auto;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
+<div class="container-fluid py-5" id="testimonial">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Resenyes Dels Nostres Clients</h6>
+                <h1 class="display-4">¿Que Diuen Els Nostres Clients?</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <img class="img-fluid mx-auto mb-3" src="Captura de pantalla 2025-02-06 170743.png" style="width: 100px;">
+                            <p style="font-size: 22px;">La meva mare utilitza el rellotge GPS i la teleassistència, i estem encantats. Ens dona molta tranquil·litat saber que, si necessita ajuda, pot demanar-la en qualsevol moment. A més, participa en el club de lectura i les teràpies, cosa que la manté activa i socialitzada. Un servei complet i molt ben organitzat!</p>
+                            <h4>David Busquets</h4>
+                            <span>Client</span>
+                        </div>
 
-        .testimonial {
-            display: none;
-        }
 
-        .testimonial.active {
-            display: block;
-        }
-
-        .testimonial img {
-            width: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .testimonial p {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        /* Flechas de navegación */
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            font-size: 30px;
-            cursor: pointer;
-            color: #333;
-        }
-
-        .prev {
-            left: -40px;
-        }
-
-        .next {
-            right: -40px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="testimonial-container">
-        <button class="arrow prev" onclick="changeTestimonial(-1)">❮</button>
-
-        <div class="testimonial active">
-            <img src="Captura de pantalla 2025-02-06 170743.png">
-            <p>La meva mare utilitza el rellotge GPS i la teleassistència, i estem encantats. Ens dona molta tranquil·litat saber que, si necessita ajuda, pot demanar-la en qualsevol moment. A més, participa en el club de lectura i les teràpies, cosa que la manté activa i socialitzada. Un servei complet i molt ben organitzat!</p>
-            <h4>David Boldo</h4>
-            <span>Client</span>
-        </div>
-
-        <div class="testimonial">
-            <img src="Captura de pantalla 2025-02-06 171209.png">
-            <p>Vaig contractar la teleassistència per a la meva àvia, que viu sola, i ha estat una gran ajuda. Se sent més segura, i nosaltres també estem més tranquils. A més, participa en activitats com el ioga i la musicoteràpia, que l'ajuden a mantenir-se activa. Sens dubte, un servei molt recomanable!</p>
-            <h4>Ana Sanchez</h4>
-            <span>Client</span>
-        </div>
-
-        <button class="arrow next" onclick="changeTestimonial(1)">❯</button>
-    </div>
-
-    <script>
-        let currentIndex = 0;
-        const testimonials = document.querySelectorAll(".testimonial");
-
-        function changeTestimonial(direction) {
-            testimonials[currentIndex].classList.remove("active");
-            currentIndex = (currentIndex + direction + testimonials.length) % testimonials.length;
-            testimonials[currentIndex].classList.add("active");
-        }
-    </script>
-
+                        <div class="text-center">
+                            <img class="img-fluid mx-auto mb-3" src="Captura de pantalla 2025-02-06 171209.png" style="width: 100px;">
+                            <p style="font-size: 22px;">Vaig contractar la teleassistència per a la meva àvia, que viu sola, i ha estat una gran ajuda. Se sent més segura, i nosaltres també estem més tranquils. A més, participa en activitats com el ioga i la musicoteràpia, que l'ajuden a mantenir-se activa. Sens dubte, un servei molt recomanable!</p>
+                            <h4>Ana Sanchez</h4>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
 <!-- Testimonial End -->
 
 
