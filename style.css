@@ -87,13 +87,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-html, body {
-  height: 100%;
-  margin: 0px ;
-  padding: 0px ;
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Contenedor principal para empujar el footer abajo */
 .main-content {
